@@ -1,0 +1,68 @@
+/* * {
+    font-size: 25px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.flex-hijo {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background: pink;
+    border: 2px solid #000;
+}
+
+.hijo5,
+.hijo4 {
+    flex-grow: 1;
+}
+
+.hijo2 {
+    flex-grow: 2;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "aside main main"
+        "aside main main"
+        "footer footer footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background: pink;
+}
+
+main {
+    grid-area: main;
+    background: rgb(182, 182, 224);
+}
+
+.aside1 {
+    grid-area: aside1;
+    background: coral;
+}
+
+.aside2 {
+    grid-area: aside2;
+    background: coral;
+}
+
+footer {
+    grid-area: footer;
+    background: blue
+}

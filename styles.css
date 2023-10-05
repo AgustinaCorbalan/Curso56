@@ -1,0 +1,133 @@
+/*TIPOS DE SELECTORES
+POR ELEMENTO VIENEN A SER LOS ELEMENTOS SIN NINGUNA MODIFICACIÓN 
+ELEMENTO UNIVERSAL *  SELECCIONA TODOS LOS ELEMENTOS DEL HTML
+POR ID sintaxis: #nombre agregar al elemento del html un identificador único no se puede repetir!
+POR CLASE sintaxis .nombre
+POR ATRIBUTO sintaxis: [inventado="h3-inventado"]
+*/
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/*POR ETIQUETA*/
+
+.div-uno {
+    width: 300px;
+    height: 250px;
+    box-sizing: content-box;
+    background-color: pink;
+    border: 8px solid black;
+    margin-top: 10px;
+    padding: 40px;
+}
+
+/* width: 300 + (2*40 padding izq y derecho) + (2 * 8 borde izq y derecho ) = 396 */
+/* heigth: 250 + (2*40 padding izq y derecho) + (2 * 8 borde izq y derecho ) = */
+.div-2 {
+    width: 300px;
+    height: 250px;
+    background-color: pink;
+    box-sizing: border-box;
+    border: 8px solid black;
+    padding: 40px;
+    margin-top: 10px;
+}
+
+.contenedor {
+    box-sizing: content-box;
+    width: 250px;
+    height: 200px;
+    background: pink;
+    border: 5px solid black;
+}
+
+.hijo {
+    width: 50px;
+    height: 80px;
+    border: 5px solid gray;
+}
+
+.div-img {
+    width: 500px;
+    height: 250px;
+    background: red;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+}
+
+span {
+    background: greenyellow;
+}
+
+.div-span {
+    width: 500px;
+    height: 300px;
+    background: blue
+}
+
+h3 {
+    color: rgb(43, 205, 226) !important;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+h1 {
+    color: deeppink;
+}
+
+/*POR ID*/
+#h3-Lista-ordenada {
+    background-color: chartreuse;
+}
+
+/*POR CLASE*/
+.h3-lista {
+    background-color: rgb(232, 4, 248);
+    color: black;
+    font-family: Sofia;
+}
+
+/*POR ATRIBUTO*/
+[inventado="h3-inventado"] {
+    background-color: rgb(130, 80, 255);
+}
+
+/*JERARQUIA ELEMENTO PADRE-HIJO*/
+p {
+    text-align: center;
+    color: darkgreen;
+}
+
+p {
+    color: rgb(120, 2, 2, 5);
+}
+
+section article p {
+    color: gold;
+}
+
+section {
+    background-color: blueviolet;
+}
+
+/*mas de una clase*/
+.otra-clase {
+    float: right
+}
+
+#ol-ordenada {
+    background-color: darkolivegreen;
+}
+
+.ol-class,
+ul {
+    background-color: rgba(201, 99, 26, 0.17) !important;
+    list-style: none;
+}
