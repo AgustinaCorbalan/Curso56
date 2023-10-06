@@ -1,7 +1,17 @@
-/* * {
-    font-size: 25px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+/* 
 
 .flex-container {
     display: flex;
@@ -25,44 +35,3 @@
 .hijo2 {
     flex-grow: 2;
 } */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "aside main main"
-        "aside main main"
-        "aside main main"
-        "footer footer footer";
-    height: 100vh;
-}
-
-header {
-    grid-area: header;
-    background: pink;
-}
-
-main {
-    grid-area: main;
-    background: rgb(182, 182, 224);
-}
-
-.aside1 {
-    grid-area: aside1;
-    background: coral;
-}
-
-.aside2 {
-    grid-area: aside2;
-    background: coral;
-}
-
-footer {
-    grid-area: footer;
-    background: blue
-}
